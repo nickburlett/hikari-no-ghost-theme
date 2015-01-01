@@ -22,7 +22,9 @@
             <h1><a href="{{url}}">{{{title}}}</a></h1>
         </header>
 
-        <p>{{excerpt}}… <a href="{{url}}" class="more">Read more</a></p>
+        {{#if image }}<p><img src="{{image}}"></p>{{/if}}
+        
+        <p>{{content characters="300"}}… <a href="{{url}}" class="more">Read more</a></p>
         <footer>
             <p class="meta">
                 <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
